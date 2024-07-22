@@ -20,14 +20,14 @@ public void SetQuantidade (string Quantia)
 //-----------------------------------------------------------------------------
 public void GetCor (string Cor)
 {
-    this.Cor=Cor; 
+    return Cor; 
 }
 public void GetTecido (string Tecido)
 {
-    this.Tecido=Tecido; 
+    return Tecido; 
 }
 public void GetQuantia (string Quantia)
 {
-    this.Quantidade=Quantidade; 
+   return Quantidade; 
 }
 }

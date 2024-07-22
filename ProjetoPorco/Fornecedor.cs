@@ -31,22 +31,22 @@ public void SetFornecimento (string Fornecimento)
 //----------------------------------------------------------------------------
 public void GetNome (string Nome)
 {
-    this.Nome=Nome; 
+    return Nome; 
 }
 public void GetTelefone (string Telefone)
 {
-    this.Telefone=Telefone; 
+    return Telefone; 
 }
 public void GetEmail (string Email)
 {
-    this.Email=Email; 
+    return Email; 
 }
 public void GetEndereço (string Endereço)
 {
-    this.Endereço=Endereço; 
+    return Endereço; 
 }
 public void GetFornecimento (string Fornecimento)
 {
-    this.Fornecimento=Fornecimento; 
+    return Fornecimento; 
 }
 }

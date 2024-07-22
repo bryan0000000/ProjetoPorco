@@ -36,27 +36,27 @@ public void SetQuantia (string Quantia)
 //--------------------------------------------------------------------------------------
 public void GetNome (string Nome)
 {
-    this.Nome=Nome; 
+    return Nome; 
 }
 public void GetTelefone (string Telefone)
 {
-    this.Telefone=Telefone; 
+    return Telefone; 
 }
 public void GetEmail (string Email)
 {
-    this.Email=Email; 
+    return Email; 
 }
 public void GetEndereço (string Endereço)
 {
-    this.Endereço=Endereço; 
+    return Endereço; 
 }
 public void GetRoupa (string Roupa)
 {
-    this.Roupa=Roupa; 
+    return Roupa; 
 }
 public void GetQuantia (string Quantia)
 {
-    this.Quantia=Quantia; 
+    return Quantia; 
 }
 }
 
