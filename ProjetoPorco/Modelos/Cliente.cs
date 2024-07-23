@@ -1,5 +1,6 @@
-namespace ProjetoPorco;
-public class cliente
+namespace Modelos;
+
+public class cliente:Registro
 {
     string Nome;
     string Telefone;
@@ -11,7 +12,7 @@ public void SetNome (string Nome)
 }
 public void SetTelefone (string Telefone)
 {
-    this.Telefone .Telefone; 
+    this.Telefone=Telefone; 
 }
 //----------------------------------------------------------------------------
 public string GetNome()

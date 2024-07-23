@@ -1,5 +1,5 @@
-namespace ProjetoPorco;
-public class Estoque
+namespace Modelos;
+public class Estoque:Registro
 {
     string Cor;
     string Tecido;

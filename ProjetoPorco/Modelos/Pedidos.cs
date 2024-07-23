@@ -1,11 +1,12 @@
-namespace ProjetoPorco;
-public class Fornecedor
+namespace Modelos;
+public class Pedidos:Registro
 {
     string Nome;
     string Telefone;
     string Email;
     string Endereço;
-    string Fornecimento;
+    string Roupa;
+    int Quantia;
     int id;
 
 public void SetNome (string Nome)
@@ -24,11 +25,15 @@ public void SetEndereço (string Endereço)
 {
     this.Endereço=Endereço; 
 }
-public void SetFornecimento (string Fornecimento)
+public void SetRoupa (string Roupa)
 {
-    this.Fornecimento=Fornecimento; 
+    this.Roupa=Roupa; 
 }
-//----------------------------------------------------------------------------
+public void SetQuantia (string Quantia)
+{
+    this.Quantia=Quantia; 
+}
+//--------------------------------------------------------------------------------------
 public void GetNome (string Nome)
 {
     return Nome; 
@@ -45,8 +50,14 @@ public void GetEndereço (string Endereço)
 {
     return Endereço; 
 }
-public void GetFornecimento (string Fornecimento)
+public void GetRoupa (string Roupa)
 {
-    return Fornecimento; 
+    return Roupa; 
+}
+public void GetQuantia (string Quantia)
+{
+    return Quantia; 
 }
 }
+
+
