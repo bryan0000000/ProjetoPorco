@@ -2,16 +2,15 @@ namespace Controles
  {   
         public class Cliente_Controle:Controle_Base
     {
-                public virtual void Criar (Registro)
+                public override void Criar (Registro)
             {
             }
-                public virtual void Atualizar (Registro)
+                public override void Atualizar (Registro)
+            }
+                public override void Apagar (int id)
             {   
             }
-                public virtual void Apagar (int id)
-            {   
-            }
-                public virtual void ler (int id)
+                public override void ler (int id)
             { 
                     return id;  
             }

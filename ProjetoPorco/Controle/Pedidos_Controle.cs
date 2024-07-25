@@ -2,16 +2,16 @@ namespace Controles
  {   
         public class Pedidos_Controle:Controle_Base
     {
-                public virtual void Criar (Registro)
+                public override void Criar (Objeto o)
             {
             }
-                public virtual void Atualizar (Registro)
+                public override void Atualizar (Objeto o)
             {   
             }
-                public virtual void Apagar (int id)
+                public override void Apagar (int id)
             {   
             }
-                public virtual void Ler (int id)
+                public override void Ler (int id)
             { 
                     return id;  
             }
