@@ -1,8 +1,10 @@
+using Modelos;
+
 namespace Controles
  {   
         public class Controle_Base
     {
-                public virtual void Criar (Objeto O)
+                public virtual void Criar (Registro O)
             {
             }
                 public virtual void Atualizar (Registro O)
@@ -11,9 +13,9 @@ namespace Controles
                 public virtual void Apagar (int id)
             {   
             }
-                public virtual void ler (int id)
+                public virtual Registro ler (int id)
             { 
-                    return id;  
+                    return null;  
             }
     }
  }

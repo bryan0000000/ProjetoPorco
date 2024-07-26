@@ -1,3 +1,5 @@
+using Modelos;
+
 namespace Controles
  {   
         public class Estoque_Controle:Controle_Base
@@ -11,9 +13,9 @@ namespace Controles
                 public override void Apagar (int id)
             {   
             }
-                public override void Ler (int id)
+                public override Registro Ler (int id)
             { 
-                    return id;  
+                    return null;  
             }
    }
  }

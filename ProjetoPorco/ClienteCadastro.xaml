@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoPorco.ClienteCadastro">
+        <ContentPage.Content>
+        <StackLayout BackgroundColor="Black" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="criar cliente"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   TextColor="LightGray"
+                   Margin="0,20,0,10" />
+            <Button Text="Back"
+                    FontSize="Medium"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" />
+            <StackLayout BackgroundColor="DarkGray"
+                         Padding="20"
+                         Spacing="20">
+                <Label Text="nome" TextColor="LightGray" />
+                <Entry x:Name="NomeEntry" BackgroundColor="White" TextColor="Black" />
+                <Label Text="telefone" TextColor="LightGray" />
+                <Entry x:Name="TelefoneEntry" BackgroundColor="White" TextColor="Black" />
+                <Button Text="cadastrar cliente"
+                        FontSize="Medium"
+                        BackgroundColor="LightGreen"
+                        TextColor="Black"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Clicked="OnCadastrarClienteClicked" />
+            </StackLayout>
+        </StackLayout>
