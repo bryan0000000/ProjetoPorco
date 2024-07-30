@@ -29,32 +29,32 @@ public void SetRoupa (string Roupa)
 {
     this.Roupa=Roupa; 
 }
-public void SetQuantia (string Quantia)
+public void SetQuantia (int Quantia)
 {
     this.Quantia=Quantia; 
 }
 //--------------------------------------------------------------------------------------
-public void GetNome (string Nome)
+public string GetNome ( )
 {
     return Nome; 
 }
-public void GetTelefone (string Telefone)
+public string GetTelefone ( )
 {
     return Telefone; 
 }
-public void GetEmail (string Email)
+public string GetEmail ( )
 {
     return Email; 
 }
-public void GetEndereço (string Endereço)
+public string GetEndereço ( )
 {
     return Endereço; 
 }
-public void GetRoupa (string Roupa)
+public string GetRoupa ( )
 {
     return Roupa; 
 }
-public void GetQuantia (string Quantia)
+public int GetQuantia ( )
 {
     return Quantia; 
 }

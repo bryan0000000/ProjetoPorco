@@ -13,7 +13,7 @@ namespace Controles
                 public override void Apagar (int id)
             {   
             }
-                public override Registro Ler (int id)
+                public virtual Registro Ler (int id)
             { 
                     return null;  
             }

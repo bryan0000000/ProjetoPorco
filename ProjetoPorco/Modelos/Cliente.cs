@@ -1,6 +1,6 @@
 namespace Modelos;
 
-public class cliente:Registro
+public class Cliente:Registro
 {
     string Nome;
     string Telefone;

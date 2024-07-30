@@ -29,23 +29,23 @@ public void SetFornecimento (string Fornecimento)
     this.Fornecimento=Fornecimento; 
 }
 //----------------------------------------------------------------------------
-public void GetNome (string Nome)
+public string GetNome ( )
 {
     return Nome; 
 }
-public void GetTelefone (string Telefone)
+public string GetTelefone ( )
 {
     return Telefone; 
 }
-public void GetEmail (string Email)
+public string GetEmail ( )
 {
     return Email; 
 }
-public void GetEndereço (string Endereço)
+public string GetEndereço ( )
 {
     return Endereço; 
 }
-public void GetFornecimento (string Fornecimento)
+public string GetFornecimento ( )
 {
     return Fornecimento; 
 }

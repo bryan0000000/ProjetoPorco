@@ -18,15 +18,15 @@ public void SetQuantidade (string Quantia)
     this.Quantidade=Quantidade; 
 }
 //-----------------------------------------------------------------------------
-public void GetCor (string Cor)
+public string GetCor ( )
 {
     return Cor; 
 }
-public void GetTecido (string Tecido)
+public string GetTecido ( )
 {
     return Tecido; 
 }
-public void GetQuantia (string Quantia)
+public int GetQuantia ( )
 {
    return Quantidade; 
 }

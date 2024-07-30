@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoPorco.CriarFornecedor">
+        <StackLayout Padding="30" VerticalOptions="CenterAndExpand" Spacing="10">
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+            <Image Source="back_icon.png"
+                   HeightRequest="30"
+                   WidthRequest="30"
+                   HorizontalOptions="Start" />
+            <Label Text="criar fornecedor"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="LightGray"
+                   FontSize="24"/>
+        </StackLayout>
+
+        <Label Text="nome" 
+               TextColor="LightGray" />
+        <Entry Placeholder="nome" 
+               BackgroundColor="White" 
+               TextColor="Black"/>
+
+        <Label Text="telefone" 
+               TextColor="LightGray" />
+        <Entry Placeholder="telefone" 
+               BackgroundColor="White" 
+               TextColor="Black"/>
+
+        <Label Text="email" 
+               TextColor="LightGray" />
+        <Entry Placeholder="email" 
+               BackgroundColor="White" 
+               TextColor="Black"/>
+
+        <Label Text="endereço" 
+               TextColor="LightGray" />
+        <Entry Placeholder="endereço" 
+               BackgroundColor="White" 
+               TextColor="Black"/>
+
+        <Button Text="cadastrar cliente" 
+                BackgroundColor="#DFF2D6" 
+                TextColor="Black"
+                Margin="0,20,0,0"/>
+    </StackLayout>
+</ContentPage>
