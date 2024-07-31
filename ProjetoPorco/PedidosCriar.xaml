@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoPorco.PedidosCadastro">
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+
+        <Label Text="criar pedidos"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               TextColor="White" />
+
+        <StackLayout BackgroundColor="#444444"
+                     Padding="20"
+                     CornerRadius="20"
+                     Spacing="15">
+
+            <Entry x:Name="NomeEntry"
+                   Placeholder="nome"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   HeightRequest="40" />
+
+            <Entry x:Name="TelefoneEntry"
+                   Placeholder="telefone"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   HeightRequest="40" />
+
+            <Entry x:Name="EmailEntry"
+                   Placeholder="email"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   HeightRequest="40" />
+
+            <Button Text="cadastrar cliente"
+                    BackgroundColor="#c5e1a5"
+                    TextColor="Black"
+                    CornerRadius="10"
+                    Clicked="OnCadastrarClienteClicked" />
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

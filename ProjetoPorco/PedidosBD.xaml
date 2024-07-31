@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoPorco.PedidosBD">
+             <Grid Padding="30">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Text="BC pedidos"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               TextColor="White"
+               Grid.Row="0" />
+
+        <CollectionView x:Name="PedidosCollectionView"
+                        ItemsSource="{Binding Pedidos}"
+                        Grid.Row="1"
+                        BackgroundColor="#444444"
+                        Margin="10"
+                        CornerRadius="20">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#777777"
+                           Padding="10"
+                           Margin="5"
+                           CornerRadius="10">
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="FillAndExpand"
+                                     Spacing="10">
+                            <Label Text="{Binding Nome}"
+                                   VerticalOptions="Center"
+                                   TextColor="White" />
+                            <Button Text="..."
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Transparent"
+                                    TextColor="White"
+                                    Command="{Binding BindingContext.MoreOptionsCommand, Source={x:Reference PedidosCollectionView}}"
+                                    CommandParameter="{Binding .}" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="+"
+                BackgroundColor="#c5e1a5"
+                TextColor="Black"
+                CornerRadius="20"
+                HeightRequest="50"
+                WidthRequest="50"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                Clicked="OnAddPedidoClicked"
+                Grid.Row="1"
+                Margin="10" />
+    </Grid>
+</ContentPage>
