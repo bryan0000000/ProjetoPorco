@@ -12,22 +12,21 @@
 
         <StackLayout BackgroundColor="#444444"
                      Padding="20"
-                     CornerRadius="20"
                      Spacing="15">
 
-            <Entry x:Name="NomeEntry"
+            <Entry x:Name=""
                    Placeholder="nome"
                    TextColor="Black"
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Entry x:Name="TelefoneEntry"
+            <Entry x:Name=""
                    Placeholder="telefone"
                    TextColor="Black"
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Entry x:Name="EmailEntry"
+            <Entry x:Name=""
                    Placeholder="email"
                    TextColor="Black"
                    BackgroundColor="White"
