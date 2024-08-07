@@ -12,7 +12,7 @@ namespace PedidosBD
 
         public PedidosPage()
         {
-            InitializeComponent();
+            //InitializeComponent();
 
             Pedidos = new ObservableCollection<Pedido>
             {

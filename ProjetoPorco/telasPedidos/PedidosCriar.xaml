@@ -14,19 +14,19 @@
                      Padding="20"
                      Spacing="15">
 
-            <Entry x:Name=""
+            <Entry x:Name="NomeEntry"
                    Placeholder="nome"
                    TextColor="Black"
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Entry x:Name=""
+            <Entry x:Name="TelefoneEntry"
                    Placeholder="telefone"
                    TextColor="Black"
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Entry x:Name=""
+            <Entry x:Name="EmailEntry"
                    Placeholder="email"
                    TextColor="Black"
                    BackgroundColor="White"
