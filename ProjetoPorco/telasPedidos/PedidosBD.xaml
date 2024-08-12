@@ -19,8 +19,7 @@
                         ItemsSource="{Binding Pedidos}"
                         Grid.Row="1"
                         BackgroundColor="#444444"
-                        Margin="10"
-                        CornerRadius="20">
+                        Margin="10">
 
             <CollectionView.ItemTemplate>
                 <DataTemplate>

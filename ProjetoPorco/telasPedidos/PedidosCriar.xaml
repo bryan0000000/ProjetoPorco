@@ -32,7 +32,7 @@
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Button Text="cadastrar cliente"
+            <Button Text="cadastrarcliente"
                     BackgroundColor="#c5e1a5"
                     TextColor="Black"
                     CornerRadius="10"

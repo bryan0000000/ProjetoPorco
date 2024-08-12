@@ -1,26 +1,30 @@
+using LiteDB;
+
 namespace Modelos;
 
-public class Cliente:Registro
+public class Cliente : Registro
 {
-    string Nome;
-    string Telefone;
-    int id;
+    [BsonId]
+    int id { get; set; }
+    string Nome { get; set; }
+    string Telefone { get; set; }
 
-public void SetNome (string Nome)
-{
-    this.Nome=Nome; 
-}
-public void SetTelefone (string Telefone)
-{
-    this.Telefone=Telefone; 
-}
-//----------------------------------------------------------------------------
-public string GetNome()
-{
-    return Nome;
-}
-public string GetTelefone()
-{
-    return Telefone;
-}
+
+    public void SetNome(string Nome)
+    {
+        this.Nome = Nome;
+    }
+    public void SetTelefone(string Telefone)
+    {
+        this.Telefone = Telefone;
+    }
+    //----------------------------------------------------------------------------
+    public string GetNome()
+    {
+        return Nome;
+    }
+    public string GetTelefone()
+    {
+        return Telefone;
+    }
 }
