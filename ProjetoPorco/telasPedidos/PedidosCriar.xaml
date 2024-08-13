@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoPorco.PedidosCadastro">
+             x:Class="ProjetoPorco.PedidosCriar">
 
     <StackLayout Padding="30" VerticalOptions="Center">
 
@@ -14,19 +14,19 @@
                      Padding="20"
                      Spacing="15">
 
-            <Entry x:Name="NomeEntry"
+            <Entry x:Name="Nome"
                    Placeholder="nome"
                    TextColor="Black"
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Entry x:Name="TelefoneEntry"
+            <Entry x:Name="nTelefone"
                    Placeholder="telefone"
                    TextColor="Black"
                    BackgroundColor="White"
                    HeightRequest="40" />
 
-            <Entry x:Name="EmailEntry"
+            <Entry x:Name="nEmail"
                    Placeholder="email"
                    TextColor="Black"
                    BackgroundColor="White"
@@ -36,7 +36,7 @@
                     BackgroundColor="#c5e1a5"
                     TextColor="Black"
                     CornerRadius="10"
-                    Clicked="OnCadastrarClienteClicked" />
+                    Clicked="" />
 
         </StackLayout>
     </StackLayout>

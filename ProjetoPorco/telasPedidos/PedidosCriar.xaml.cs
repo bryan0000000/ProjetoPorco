@@ -1,25 +1,22 @@
 using Microsoft.Maui.Controls;
 
-namespace PedidosCriar
+namespace ProjetoPorco
 {
     public partial class PedidosCriar : ContentPage
     {
-        public MainPage()
+        public PedidosCriar()
         {
-            InitializeComponent();
+         InitializeComponent();
         }
 
         private void OnCadastrarClienteClicked (object sender, EventArgs e)
         {
-           string nome = NomeEntry.Text;
-           string telefone = TelefoneEntry.Text;
-         string email = EmailEntry.Text;
+           string nome = Nome.Text;
+           string telefone = nTelefone.Text;
+           string email = nEmail.Text;
 
              //Lógica para ;cadastrar o; cliente;
             DisplayAlert("ClienteCadastrado", $"Nome: {nome}\nTelefone: {telefone}\nEmail: {email}", "OK");
         }
     }
 }
-
-
-
