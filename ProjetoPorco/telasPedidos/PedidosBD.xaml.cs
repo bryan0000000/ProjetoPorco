@@ -2,15 +2,15 @@ using Microsoft.Maui.Controls;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
-namespace PedidosBD
+namespace ProjetoPorco
 {
-    public partial class PedidosPage : ContentPage
+    public partial class PedidosBD : ContentPage
     {
         public ObservableCollection<Pedido> Pedidos { get; set; }
 
         public ICommand MoreOptionsCommand { get; private set; }
 
-        public PedidosPage()
+        public PedidosBD()
         {
             //InitializeComponent();
 

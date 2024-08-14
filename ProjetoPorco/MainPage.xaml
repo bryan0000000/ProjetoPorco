@@ -7,39 +7,56 @@
  
     <Grid>
      
-               <Grid.RowDefinitions>
-                 <RowDefinition Height="50"/>
-                 <RowDefinition Height="50"/>
-                 <RowDefinition Height="50"/>
-                                 
-               </Grid.RowDefinitions>
-               <Grid.ColumnDefinitions>
-                 <ColumnDefinition Width="*"/>
-                 <ColumnDefinition Width="*"/>
-                 <ColumnDefinition Width="*"/>
-                 <ColumnDefinition Width="*"/>
-               </Grid.ColumnDefinitions>
-  
+        <Grid.RowDefinitions>
+          <RowDefinition Height="100"/>
+          <RowDefinition Height="80"/>
+          <RowDefinition Height="80"/>
+          <RowDefinition Height="80"/>
+          <RowDefinition Height="*"/>                
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+           <Image  Source="teladefundo.jpg"
+                   Aspect="AspectFill"
+                   Grid.RowSpan="5"
+                   Grid.ColumnSpan="3"/> 
          
             <Label Text="tela de inicio" 
                    TextColor="White" 
                    FontSize="Large" 
-                   HorizontalOptions="Center" 
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.Column="1"
                    Margin="0,20,0,20"/>
+
             <Button Text="clientes" 
+                    BackgroundColor="LightGray"
+                    Clicked="botaoclientes" 
+                    HorizontalOptions="Center" 
+                    WidthRequest="200"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="0,10"/>
+
+            <Button Text="fornecedores"
+                    TextColor="Black" 
                     BackgroundColor="LightGray" 
                     HorizontalOptions="Center" 
                     WidthRequest="200"
+                    Grid.Column="1"
+                    Grid.Row="2"
                     Margin="0,10"/>
-            <Button Text="fornecedores" 
-                    BackgroundColor="LightGray" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="200"
-                    Margin="0,10"/>
+
             <Button Text="pedidos" 
                     BackgroundColor="LightGray" 
                     HorizontalOptions="Center" 
                     WidthRequest="200"
+                    Grid.Column="1"
+                    Grid.Row="3"
                     Margin="0,10"/>
        
     </Grid>

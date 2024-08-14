@@ -36,7 +36,7 @@
                     BackgroundColor="#c5e1a5"
                     TextColor="Black"
                     CornerRadius="10"
-                    Clicked="" />
+                    Clicked="OnCadastrarClienteClicked" />
 
         </StackLayout>
     </StackLayout>
