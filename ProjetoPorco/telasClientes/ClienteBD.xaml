@@ -2,21 +2,39 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoPorco.ClienteBD">
-        <StackLayout BackgroundColor="Black" Padding="10">
+<StackLayout BackgroundColor="Black" Padding="10">
+  <Grid>
+   
+  <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="30"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>                
+   </Grid.RowDefinitions>
+   <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+   </Grid.ColumnDefinitions>
+
             <Label Text="BC cliente"
                    HorizontalOptions="Center"
                    FontSize="Large"
                    TextColor="White"
                    Margin="0,20,0,10" />
-            <Button Text="Back"
-                    FontSize="Medium"
+
+          <ImageButton Source="voltar.png"
+                    Grid.Row="1"
                     BackgroundColor="Red"
-                    TextColor="White"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" />
+
             <StackLayout BackgroundColor="DarkGray"
                          Padding="10"
+                         Grid.Row="2"
                          Spacing="10">
+
                 <Button Text="cliente 1" BackgroundColor="Gray" TextColor="Black" />
                 <Button Text="cliente 2" BackgroundColor="Gray" TextColor="Black" />
                 <Button Text="cliente 3" BackgroundColor="Gray" TextColor="Black" />
@@ -27,6 +45,7 @@
                 <Button Text="clientes 7" BackgroundColor="Gray" TextColor="Black" />
                 <Button Text="clientes 8" BackgroundColor="Gray" TextColor="Black" />
             </StackLayout>
+
             <Button Text="Add" 
                     FontSize="Large"
                     BackgroundColor="White"
@@ -34,6 +53,7 @@
                     HorizontalOptions="End"
                     VerticalOptions="End"
                     Margin="0,10,0,0"/>
-        </StackLayout>
+  </Grid>
+</StackLayout>
 
 </ContentPage>
