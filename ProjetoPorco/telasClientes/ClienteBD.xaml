@@ -30,24 +30,26 @@
                     HorizontalOptions="Start"
                     VerticalOptions="Start" />
               <ListView x:Name="ListaClientes"
-                            HasUnevenRows="True"
-                            ItemSelected="QuandoSelecionarUmItemNaLista"
-                            HorizontalOptions="Fill"
-                            VerticalOptions="Fill">
+                           HasUnevenRows="True"
+                           BackgroundColor="green"
+                           Grid.ColumnSpan="4"
+                           Grid.Row="2"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill">
                <ListView.ItemTemplate>
                       <DataTemplate>
                         <ViewCell>
                           <VerticalStackLayout Padding="20"
-                                              BackgroundColor="Pink">
+                                               BackgroundColor="green">
                             <HorizontalStackLayout>
                               <Label Text="{Binding Nome}"
-                                    FontSize="20"/>
+                                     FontSize="20"/>
                               <Label Text="{Binding Sobrenome}"
-                                    FontSize="20"
-                                    Margin="10,0,0,0"/>
+                                     FontSize="20"
+                                     Margin="10,0,0,0"/>
                             </HorizontalStackLayout>
-                            <Label Text="{Binding Telefone}"
-                                    FontSize="20"/>
+                              <Label Text="{Binding Telefone}"
+                                     FontSize="20"/>
                           </VerticalStackLayout>
                         </ViewCell>
                       </DataTemplate>
@@ -57,6 +59,8 @@
 
        <Button Text="Add" 
                     FontSize="Large"
+                    Grid.Column="4"
+                    Grid.Row="4"
                     BackgroundColor="White"
                     TextColor="Black"
                     HorizontalOptions="End"
