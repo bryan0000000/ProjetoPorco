@@ -33,7 +33,8 @@
                    Grid.Column="1"
                    Margin="0,20,0,20"/>
 
-            <Button Text="clientes" 
+            <Button Text="clientes"
+                    TextColor="Black" 
                     BackgroundColor="LightGray"
                     Clicked="botaoclientes" 
                     HorizontalOptions="Center" 
@@ -51,7 +52,8 @@
                     Grid.Row="2"
                     Margin="0,10"/>
 
-            <Button Text="pedidos" 
+            <Button Text="pedidos"
+                    TextColor="Black" 
                     BackgroundColor="LightGray" 
                     HorizontalOptions="Center" 
                     WidthRequest="200"

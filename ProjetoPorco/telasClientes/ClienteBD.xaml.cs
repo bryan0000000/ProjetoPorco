@@ -9,5 +9,7 @@ namespace ProjetoPorco
         {
             InitializeComponent();
         }
+
+        void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
     }
 }
