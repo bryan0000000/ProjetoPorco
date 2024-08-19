@@ -40,11 +40,25 @@ namespace ProjetoPorco
         {
             // Lógica para adicionar um novo pedido
             DisplayAlert("Adicionar Pedido", "Novo pedido adicionado", "OK");
-        }
+       }
+	private void Bvoltar(object sender, EventArgs args)
+	{
+		Application.Current.MainPage = new MainPage();
     }
+
+
+
+    }
+
 
     public class Pedido
     {
-        public string Nome { get; set; }
+        public string Nome { get; set; } 
     }
+   
+       
+      
+
+
+
 }

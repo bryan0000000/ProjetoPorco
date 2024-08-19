@@ -28,7 +28,8 @@
                     Grid.Row="1"
                     BackgroundColor="Red"
                     HorizontalOptions="Start"
-                    VerticalOptions="Start" />
+                    VerticalOptions="Start" 
+                    Clicked="Voltar"/>
               <ListView x:Name="ListaClientes"
                            HasUnevenRows="True"
                            BackgroundColor="green"
