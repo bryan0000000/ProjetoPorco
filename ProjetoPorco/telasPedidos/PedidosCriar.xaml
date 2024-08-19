@@ -3,42 +3,72 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoPorco.PedidosCriar">
 
-    <StackLayout Padding="30" VerticalOptions="Center">
+  
+<Grid>
+     
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>                
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    
+
+        <Image Source="teladefundo.jpg"
+               Grid.RowSpan="6"
+              Grid.ColumnSpan="4"/>
 
         <Label Text="criar pedidos"
                HorizontalOptions="Center"
                FontSize="Large"
+                Grid.Row="1"
+                
                TextColor="White" />
 
-        <StackLayout BackgroundColor="#444444"
-                     Padding="20"
-                     Spacing="15">
+        
 
             <Entry x:Name="Nome"
-                   Placeholder="nome"
+                   Placeholder="nome:"
                    TextColor="Black"
-                   BackgroundColor="White"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   BackgroundColor="#943d47"
                    HeightRequest="40" />
 
             <Entry x:Name="nTelefone"
-                   Placeholder="telefone"
+                   Placeholder="telefone:"
                    TextColor="Black"
-                   BackgroundColor="White"
+                    Grid.Row="3"
+                   Grid.Column="0"
+                   BackgroundColor="#943d47"
                    HeightRequest="40" />
 
             <Entry x:Name="nEmail"
-                   Placeholder="email"
+                   Placeholder="email:"
                    TextColor="Black"
-                   BackgroundColor="White"
+                    Grid.Row="4"
+                   Grid.Column="0"
+                   BackgroundColor="#943d47"
                    HeightRequest="40" />
 
             <Button Text="cadastrarcliente"
                     BackgroundColor="#c5e1a5"
+                     Grid.Row="5"
+                   Grid.Column="0"
                     TextColor="Black"
                     CornerRadius="10"
                     Clicked="OnCadastrarClienteClicked" />
 
-        </StackLayout>
-    </StackLayout>
+      
+   </Grid>
 
 </ContentPage>
