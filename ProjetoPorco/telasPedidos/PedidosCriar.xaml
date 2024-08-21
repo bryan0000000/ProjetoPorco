@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoPorco.PedidosCriar">
+             x:Class="ProjetoPorco.PedidosCriar"
+             BackgroundImageSource="vinho.jpg">
 
   
 <Grid>
@@ -12,7 +13,7 @@
           <RowDefinition Height="*"/>
           <RowDefinition Height="*"/>
           <RowDefinition Height="*"/>
-          <RowDefinition Height="*"/>                
+          <RowDefinition Height="100"/>                
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*"/>
@@ -23,52 +24,60 @@
         </Grid.ColumnDefinitions>
     
 
-        <Image Source="teladefundo.jpg"
-               Grid.RowSpan="6"
-              Grid.ColumnSpan="4"/>
+        
 
         <Label Text="criar pedidos"
                HorizontalOptions="Center"
                FontSize="Large"
-                Grid.Row="1"
-                
+               Grid.Row="1"
+               Grid.Column="2"
                TextColor="White" />
 
-        
+            <Label x:Name="IdLabel"/>  
 
-            <Entry x:Name="Nome"
+            <Entry x:Name="nNome"
                    Placeholder="nome:"
+                   VerticalOptions="Center"
                    TextColor="Black"
                    Grid.Row="2"
-                   Grid.Column="0"
+                   Grid.Column="2"
                    BackgroundColor="#943d47"
                    HeightRequest="40" />
 
             <Entry x:Name="nTelefone"
                    Placeholder="telefone:"
+                   VerticalOptions="Center"
                    TextColor="Black"
                     Grid.Row="3"
-                   Grid.Column="0"
+                   Grid.Column="2"
                    BackgroundColor="#943d47"
                    HeightRequest="40" />
 
             <Entry x:Name="nEmail"
                    Placeholder="email:"
+                   VerticalOptions="Center"
                    TextColor="Black"
                     Grid.Row="4"
-                   Grid.Column="0"
+                   Grid.Column="2"
                    BackgroundColor="#943d47"
                    HeightRequest="40" />
 
-            <Button Text="cadastrarcliente"
+            <Button Text="cadastrar"
                     BackgroundColor="#c5e1a5"
-                     Grid.Row="5"
-                   Grid.Column="0"
+                    Grid.Row="5"
+                    Grid.Column="2"
                     TextColor="Black"
                     CornerRadius="10"
                     Clicked="OnCadastrarClienteClicked" />
 
-      
+             <ImageButton Source="voltar.png"
+                    Grid.Row="1"
+                    BackgroundColor="Red"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    Clicked="b145"/>
+           
+
    </Grid>
 
 </ContentPage>

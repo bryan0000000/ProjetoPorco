@@ -4,7 +4,7 @@ using Modelos;
 
 namespace Controles;
 
-public class Pedidos_Controle
+public class PedidosControle
 {
   //----------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ public class Pedidos_Controle
 
   //----------------------------------------------------------------------------
 
-  public Pedidos_Controle()
+  public PedidosControle()
   {
     var pathToPersonalFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SESI.db");
 

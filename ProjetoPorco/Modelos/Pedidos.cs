@@ -3,14 +3,14 @@ using LiteDB;
 namespace Modelos;
 public class Pedidos : Registro
 {
-    string Nome { get; set; }
-    string Telefone { get; set; }
-    string Email { get; set; }
-    string Endereço { get; set; }
-    string Roupa { get; set; }
-    int Quantia { get; set; }
-    [BsonId]
-    int id { get; set; }
+       public string Nome { get; set; }
+       public string Telefone { get; set; }
+       public string Email { get; set; }
+       public string Endereço { get; set; }
+       public string Roupa { get; set; }
+       public int Quantia { get; set; }
+              [BsonId]
+       public int id { get; set; }
 
     public void SetNome(string Nome)
     {
