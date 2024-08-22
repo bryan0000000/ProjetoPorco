@@ -75,7 +75,7 @@
                     BackgroundColor="Red"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
-                    Clicked="b145"/>
+                    Clicked="botaov"/>
            
 
    </Grid>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoPorco.ClienteBD">
-<VerticalStackLayout BackgroundColor="Black" Padding="10">
+             x:Class="ProjetoPorco.ClienteBD"
+             BackgroundImageSource="windows.png">
+<VerticalStackLayout  Padding="10">
   <Grid>
    
   <Grid.RowDefinitions>
       <RowDefinition Height="*"/>
-      <RowDefinition Height="30"/>
+      <RowDefinition Height="20"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="*"/>                
    </Grid.RowDefinitions>
@@ -18,15 +19,12 @@
       <ColumnDefinition Width="*"/>
    </Grid.ColumnDefinitions>
 
-            <Label Text="BC cliente"
-                   HorizontalOptions="Center"
-                   FontSize="Large"
-                   TextColor="White"
-                   Margin="0,20,0,10" />
+            
 
           <ImageButton Source="voltar.png"
                     Grid.Row="1"
                     BackgroundColor="Red"
+                      Margin="0,0,50,0"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     Clicked="Voltar"/>
@@ -58,9 +56,10 @@
                   </ListView>
               
 
-       <Button Text="Add" 
+       <Button Text="+" 
                     FontSize="Large"
                     Grid.Column="4"
+                    Clicked="add"
                     Grid.Row="4"
                     BackgroundColor="White"
                     TextColor="Black"

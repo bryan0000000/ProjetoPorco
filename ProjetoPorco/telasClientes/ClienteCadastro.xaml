@@ -1,33 +1,75 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProjetoPorco.ClienteCadastro">
-        <StackLayout BackgroundColor="Black" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="criar cliente"
-                   HorizontalOptions="Center"
-                   FontSize="Large"
-                   TextColor="LightGray"
-                   Margin="0,20,0,10" />
-            <Button Text="Back"
-                    FontSize="Medium"
+             x:Class="ProjetoPorco.ClienteCadastro"
+             BackgroundImageSource="vinho.jpg">
+
+  
+<Grid>
+     
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="100"/>                
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    
+
+        
+
+        <Label Text="criar pedidos"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               Grid.Row="1"
+               Grid.Column="2"
+               TextColor="White" />
+
+            <Label x:Name="IdLabel"/>  
+
+            <Entry x:Name="cNome"
+                   Placeholder="nome:"
+                   VerticalOptions="Center"
+                   TextColor="Black"
+                   Grid.Row="2"
+                   Grid.Column="2"
+                   BackgroundColor="#943d47"
+                   HeightRequest="40" />
+
+            <Entry x:Name="cTelefone"
+                   Placeholder="telefone:"
+                   VerticalOptions="Center"
+                   TextColor="Black"
+                    Grid.Row="3"
+                   Grid.Column="2"
+                   BackgroundColor="#943d47"
+                   HeightRequest="40" />
+
+
+            <Button Text="cadastrar"
+                    BackgroundColor="#c5e1a5"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    TextColor="Black"
+                    CornerRadius="10"
+                    Clicked="OnCadastrarClienteClickeda" />
+
+             <ImageButton Source="voltar.png"
+                    Grid.Row="1"
                     BackgroundColor="Red"
-                    TextColor="White"
                     HorizontalOptions="Start"
-                    VerticalOptions="Start" />
-            <StackLayout BackgroundColor="DarkGray"
-                         Padding="20"
-                         Spacing="20">
-                <Label Text="nome" TextColor="LightGray" />
-                <Entry x:Name="NomeEntry" BackgroundColor="White" TextColor="Black" />
-                <Label Text="telefone" TextColor="LightGray" />
-                <Entry x:Name="TelefoneEntry" BackgroundColor="White" TextColor="Black" />
-                <Button Text="cadastrar cliente"
-                        FontSize="Medium"
-                        BackgroundColor="LightGreen"
-                        TextColor="Black"
-                        HorizontalOptions="Center"
-                        VerticalOptions="End"
-                        />
-            </StackLayout>
-        </StackLayout>
+                    VerticalOptions="Start" 
+                    Clicked="jotaov"/>
+           
+
+   </Grid>
+
 </ContentPage>

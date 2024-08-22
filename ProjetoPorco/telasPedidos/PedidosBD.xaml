@@ -21,18 +21,14 @@
       <ColumnDefinition Width="*"/>
    </Grid.ColumnDefinitions>
 
-            <Label Text="BC cliente"
-                   HorizontalOptions="Center"
-                   FontSize="Large"
-                   TextColor="White"
-                   Margin="0,20,0,10" />
+           
 
           <ImageButton Source="voltar.png"
                     Grid.Row="1"
                     BackgroundColor="Red"
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
-                    Clicked="Bvoltar"/>
+                    Clicked="Voltar"/>
               <ListView x:Name="ListaClientes"
                            HasUnevenRows="True"
                            BackgroundColor="green"
