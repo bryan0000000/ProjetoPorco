@@ -57,12 +57,13 @@
                   </ListView>
               
 
-       <Button Text="Add" 
+       <Button Text="+" 
                     FontSize="Large"
                     Grid.Column="4"
                     Grid.Row="4"
                     BackgroundColor="White"
                     TextColor="Black"
+                    Clicked="ad"
                     HorizontalOptions="End"
                     VerticalOptions="End"
                     Margin="0,10,0,0"/>

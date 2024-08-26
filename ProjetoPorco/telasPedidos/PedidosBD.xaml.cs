@@ -14,5 +14,9 @@ namespace ProjetoPorco
 	{
 		Application.Current.MainPage = new MainPage();
     }
+     private void ad(object sender, EventArgs args)
+	{
+		Application.Current.MainPage = new PedidosCriar();
+   }
     }
 }

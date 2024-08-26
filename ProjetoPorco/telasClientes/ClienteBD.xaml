@@ -8,7 +8,7 @@
    
   <Grid.RowDefinitions>
       <RowDefinition Height="*"/>
-      <RowDefinition Height="20"/>
+      <RowDefinition Height="50"/>
       <RowDefinition Height="*"/>
       <RowDefinition Height="*"/>                
    </Grid.RowDefinitions>
@@ -39,6 +39,7 @@
                       <DataTemplate>
                         <ViewCell>
                           <VerticalStackLayout Padding="20"
+                                               Margin="10,10,10,10"
                                                BackgroundColor="green">
                             <HorizontalStackLayout>
                               <Label Text="{Binding Nome}"
