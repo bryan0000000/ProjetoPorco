@@ -17,27 +17,25 @@
 
         <Label Text="nome" 
                TextColor="LightGray" />
-        <Entry Placeholder="nome" 
+        <Entry Placeholder="nome"
+               x:Name="fNome" 
                BackgroundColor="White" 
                TextColor="Black"/>
 
         <Label Text="telefone" 
                TextColor="LightGray" />
-        <Entry Placeholder="telefone" 
+        <Entry Placeholder="telefone"
+               x:Name="fTelefone"  
                BackgroundColor="White" 
                TextColor="Black"/>
 
         <Label Text="email" 
                TextColor="LightGray" />
-        <Entry Placeholder="email" 
+        <Entry Placeholder="email"
+               x:Name="fEmail" 
                BackgroundColor="White" 
                TextColor="Black"/>
 
-        <Label Text="endereço" 
-               TextColor="LightGray" />
-        <Entry Placeholder="endereço" 
-               BackgroundColor="White" 
-               TextColor="Black"/>
 
         <Button Text="cadastrar cliente" 
                 BackgroundColor="#DFF2D6" 

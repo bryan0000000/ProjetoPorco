@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoPorco.CosturaBD"
+             Shell.NavBarIsVisible="false"
+              BackgroundImageSource="windows.png"
+             BackgroundColor="Black">
+
+
+<Grid>
+   
+  <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="30"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>                
+   </Grid.RowDefinitions>
+   <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+   </Grid.ColumnDefinitions>
+
+           
+
+          <ImageButton Source="voltar.png"
+                    Grid.Row="1"
+                    BackgroundColor="Red"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    Clicked="bvota"/>
+              <ListView x:Name="ListaClientes"
+                           HasUnevenRows="True"
+                           BackgroundColor="green"
+                           Grid.ColumnSpan="4"
+                           Grid.Row="2"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Fill">
+               <ListView.ItemTemplate>
+                      <DataTemplate>
+                        <ViewCell>
+                          <VerticalStackLayout Padding="20"
+                                               BackgroundColor="green">
+                            <HorizontalStackLayout>
+                              <Label Text="{Binding Nome}"
+                                     FontSize="20"/>
+                              <Label Text="{Binding Sobrenome}"
+                                     FontSize="20"
+                                     Margin="10,0,0,0"/>
+                            </HorizontalStackLayout>
+                              <Label Text="{Binding Telefone}"
+                                     FontSize="20"/>
+                          </VerticalStackLayout>
+                        </ViewCell>
+                      </DataTemplate>
+                    </ListView.ItemTemplate>
+                  </ListView>
+              
+
+       <Button Text="+" 
+                    FontSize="Large"
+                    Grid.Column="4"
+                    Grid.Row="4"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    Clicked="bcriarfornecedor"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Margin="0,10,0,0"/>
+  </Grid>
+
+
+</ContentPage>
+
+
+

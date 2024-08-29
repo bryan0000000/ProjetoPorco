@@ -4,7 +4,7 @@ using Modelos;
 
 namespace Controles;
 
-public class Fornecedor_Crotroles
+public class FornecedorCrotroles
 {
   //----------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ public class Fornecedor_Crotroles
 
   //----------------------------------------------------------------------------
 
-  public Fornecedor_Crotroles()
+  public FornecedorCrotroles()
   {
     var pathToPersonalFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SESI.db");
 

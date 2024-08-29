@@ -45,7 +45,8 @@
 
             <Button Text="fornecedores"
                     TextColor="Black" 
-                    BackgroundColor="LightGray" 
+                    BackgroundColor="LightGray"
+                    Clicked="botaofornecedor" 
                     HorizontalOptions="Center" 
                     WidthRequest="200"
                     Grid.Column="1"

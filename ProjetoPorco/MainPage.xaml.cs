@@ -17,5 +17,9 @@ public partial class MainPage : ContentPage
 	{
 		Application.Current.MainPage = new PedidosBD();
    }
+   private void botaofornecedor(object sender, EventArgs args)
+	{
+		Application.Current.MainPage = new Fornecedores();
+   }
 
 }

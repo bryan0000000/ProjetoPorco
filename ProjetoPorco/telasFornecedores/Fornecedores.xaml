@@ -4,6 +4,14 @@
              x:Class="ProjetoPorco.Fornecedores">
     <StackLayout Padding="30" VerticalOptions="CenterAndExpand">
 
+
+
+    <ImageButton Source="voltar.png"
+                    BackgroundColor="Red"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" 
+                    Clicked="bre"/>
+
         <Label Text="fornecedores" 
                HorizontalOptions="Center"
                TextColor="LightGray"
@@ -12,17 +20,26 @@
         <Button Text="silk" 
                 BackgroundColor="Gray" 
                 TextColor="Black"
+                Clicked="bsilk"
                 Margin="0,10,0,0"/>
 
         <Button Text="costura" 
                 BackgroundColor="Gray" 
                 TextColor="Black"
+                Clicked="bcostura"
                 Margin="0,10,0,0"/>
 
         <Button Text="bordado" 
                 BackgroundColor="Gray" 
                 TextColor="Black"
+                Clicked="bbordado"
                 Margin="0,10,0,0"/>
+
+        <Button Text="corte" 
+                BackgroundColor="Gray" 
+                TextColor="Black"
+                Clicked="bcorte"
+                Margin="0,10,0,0"/>        
 
     </StackLayout>
 </ContentPage>
