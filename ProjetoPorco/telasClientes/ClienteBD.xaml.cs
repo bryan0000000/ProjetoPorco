@@ -5,9 +5,11 @@ namespace ProjetoPorco
 {
     public partial class ClienteBD : ContentPage
     {
+        Controles.ClienteControle clienteControle = new Controles.ClienteControle(); 
         public ClienteBD()
         {
             InitializeComponent();
+        ListaClientes.ItemsSource = clienteControle.LerTodos();
         }
 
         	private void Voltar(object sender, EventArgs args)

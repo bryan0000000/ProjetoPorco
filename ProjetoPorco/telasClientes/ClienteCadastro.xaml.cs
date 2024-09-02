@@ -5,17 +5,30 @@ namespace ProjetoPorco
 {
     public partial class ClienteCadastro : ContentPage
     {
+       
         ClienteControle ClienteControle = new Controles.ClienteControle();
         public ClienteCadastro()
         {
          InitializeComponent();
         }
+      
+         protected override void OnAppearing()
+  {
+    var Pedidos = new Modelos.Pedidos();
+    base.OnAppearing();
 
+    if (Pedidos != null)
+    {
+      IdLabel.Text        = Pedidos.id.ToString();
+      cNome.Text      = Pedidos.Nome;
+      cTelefone.Text  = Pedidos.Telefone;
+     
+    } }
         private void OnCadastrarClienteClickeda (object sender, EventArgs e)
         {
              
                // O código abaixo preenche o objeto cliente (Modelo) com os dados das Entry's
-               var Pedidos = new Modelos.Pedidos();
+              var Pedidos = new Modelos.Pedidos();
                if (!String.IsNullOrEmpty(IdLabel.Text))
                  Pedidos.id      = int.Parse(IdLabel.Text);
                else

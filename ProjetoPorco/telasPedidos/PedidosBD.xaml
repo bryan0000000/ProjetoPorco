@@ -31,7 +31,7 @@
                     Clicked="Voltar"/>
               <ListView x:Name="ListaClientes"
                            HasUnevenRows="True"
-                           BackgroundColor="green"
+                           BackgroundColor="#55dde3ed"
                            Grid.ColumnSpan="4"
                            Grid.Row="2"
                            HorizontalOptions="Fill"
@@ -40,7 +40,7 @@
                       <DataTemplate>
                         <ViewCell>
                           <VerticalStackLayout Padding="20"
-                                               BackgroundColor="#55dde3ed">
+                                               BackgroundColor="#043952">
                             <HorizontalStackLayout>
                               <Label Text="{Binding Nome}"
                                      FontSize="20"/>
