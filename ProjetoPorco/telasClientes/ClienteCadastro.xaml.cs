@@ -19,7 +19,7 @@ namespace ProjetoPorco
                if (!String.IsNullOrEmpty(IdLabel.Text))
                  Pedidos.id      = int.Parse(IdLabel.Text);
                else
-                Pedidos.id       = 0;
+               Pedidos.id       = 0;
                Pedidos.Nome      = cNome.Text;
                Pedidos.Telefone  = cTelefone.Text;
              

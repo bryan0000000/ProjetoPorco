@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetoPorco.CosturaBD"
              Shell.NavBarIsVisible="false"
-              BackgroundImageSource="windows.png"
+              BackgroundImageSource="vinho.jpg"
              BackgroundColor="Black">
 
 
@@ -40,8 +40,8 @@
                <ListView.ItemTemplate>
                       <DataTemplate>
                         <ViewCell>
-                          <VerticalStackLayout Padding="20"
-                                               BackgroundColor="green">
+                          <VerticalStackLayout Padding="0"
+                                               BackgroundColor="#043952">
                             <HorizontalStackLayout>
                               <Label Text="{Binding Nome}"
                                      FontSize="20"/>
