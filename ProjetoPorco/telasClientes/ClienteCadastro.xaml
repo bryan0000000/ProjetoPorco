@@ -68,7 +68,15 @@
                     HorizontalOptions="Start"
                     VerticalOptions="Start" 
                     Clicked="jotaov"/>
-           
+
+             <Button Text="apagar"
+                    BackgroundColor="red"
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    TextColor="Black"
+                    CornerRadius="10"
+                    Clicked="OnApagarClienteClicked" />
+
 
    </Grid>
 

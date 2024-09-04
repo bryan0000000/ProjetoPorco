@@ -1,12 +1,13 @@
 using Controles;
 using Microsoft.Maui.Controls;
 
+
 namespace ProjetoPorco
 {
     public partial class ClienteCadastro : ContentPage
     {
-       
-        ClienteControle ClienteControle = new Controles.ClienteControle();
+  
+        PedidosControle PedidosControle = new Controles.PedidosControle();
         public ClienteCadastro()
         {
          InitializeComponent();
@@ -38,7 +39,7 @@ namespace ProjetoPorco
              
          
                // Com o objeto preenchido enviamos para o controle para criar/atualizar no Banco de Dados
-                ClienteControle.CriarOuAtualizar(Pedidos);
+                PedidosControle.CriarOuAtualizar(Pedidos);
                // Mostra a mensagem de sucesso
                   DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
              
@@ -48,6 +49,31 @@ namespace ProjetoPorco
      {
      	Application.Current.MainPage = new ClienteBD();
      }
+     
+      // Método para limpar os dados da Entry
+  private async void OnApagarClienteClicked(object sender, EventArgs e)
+  {
+     var Pedidos = new Modelos.Pedidos();
+    // Verifica se estamos editando um cliente ou criando um cliente
+    // Se estiver criando, não se pode apagar, já que não se tem um `cliente.Id`
+    if (Pedidos == null || Pedidos.id < 1)
+      await DisplayAlert("Erro", "Nenhum cliente para excluir", "ok");
+    else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse cliente?","Excluir Cliente","cancelar")) // Caso o usuário tocar no Botão "Excluir Cliente"
+    {
+      // Apaga do Banco de Dados
+      PedidosControle.Apagar(Pedidos.id);
+      // Volta para a tela de Lista
+      // Esse código abaixo pode ser um:
+      // await NavigationPage.PopAsync();
+      // Se você veio pra cá com um 
+      // await Navigation.PushAsync(new CadastroClientePage);
+      Application.Current.MainPage = new ClienteBD(); 
+    }
+  }
+
+
+
+
 
     } 
 }
